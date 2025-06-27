@@ -19,7 +19,7 @@ const port = process.env.PORT || 3001
 // CORS configuration for production
 const corsOptions = {
   origin: process.env.NODE_ENV === 'production' 
-    ? ['https://educationhome-planet.vercel.app'] // Your Vercel domain
+    ? ['https://educationhome-planet.vercel.app'] 
     : ['http://localhost:3000'],
   credentials: true,
   optionsSuccessStatus: 200
