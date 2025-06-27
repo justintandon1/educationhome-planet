@@ -1,0 +1,91 @@
+.home-page {
+  text-align: center;
+  padding: 2rem;
+  font-family: Verdana, sans-serif;
+  background: #f8f9fc;
+  min-height: 100vh;
+}
+
+.home-page h1 {
+  font-size: 2.5rem;
+  color: #0073e6;
+}
+
+.hero-section {
+  max-width: 800px;
+  margin: 0 auto 2rem auto;
+  padding: 1rem;
+}
+
+.hero-section h2 {
+  font-size: 2rem;
+  color: #333;
+}
+
+.hero-section p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.feature-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+  font-family: Verdana, sans-serif;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 120px;
+}
+
+.feature-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  background-color: #0073e6;
+}
+
+.feature-card:hover h3 {
+  color: white;
+}
+
+.feature-card h3 {
+  font-size: 1.3rem;
+  margin: 0;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .home-page h1 {
+    font-size: 2rem;
+  }
+  
+  .hero-section h2 {
+    font-size: 1.5rem;
+  }
+  
+  .features {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .feature-card {
+    padding: 1.5rem;
+    min-height: 100px;
+  }
+} 

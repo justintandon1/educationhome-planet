@@ -1,0 +1,142 @@
+.dialogue-generator {
+  text-align: center;
+  padding: 2rem;
+  font-family: Verdana, sans-serif;
+  background: #f8f9fc;
+  min-height: 100vh;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.back-button {
+  position: absolute;
+  left: 0;
+  background-color: transparent;
+  color: #0073e6;
+  border: none;
+  cursor: pointer;
+  font-family: Verdana, sans-serif;
+  font-size: 2.4rem;
+  font-weight: bold;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.back-button:hover {
+  color: #005bb8;
+  transform: scale(1.1);
+}
+
+.dialogue-generator h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  color: #0073e6;
+}
+
+.page-content {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.page-content h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.page-content p {
+  font-size: 1.1rem;
+  color: #666;
+  line-height: 1.5;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+form {
+  margin-bottom: 2rem;
+}
+
+input {
+  padding: 0.75rem 0.5rem;
+  width: 300px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-family: Verdana, sans-serif;
+}
+
+input:disabled {
+  background-color: #f5f5f5;
+  cursor: not-allowed;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  margin-left: 10px;
+  font-size: 1rem;
+  background-color: #0073e6;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  font-family: Verdana, sans-serif;
+}
+
+button:hover:not(:disabled) {
+  background-color: #005bb8;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.error {
+  color: #d32f2f;
+  background-color: #ffebee;
+  padding: 0.75rem;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  border: 1px solid #ffcdd2;
+}
+
+.results {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  max-width: 800px;
+  margin: auto;
+}
+
+.example-card {
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .back-button {
+    position: static;
+  }
+  
+  .dialogue-generator h1 {
+    font-size: 2rem;
+  }
+} 
